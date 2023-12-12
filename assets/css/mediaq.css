@@ -1,0 +1,15 @@
+@media all and (max-width: 990px){
+    .mainnavbar.navbar{
+        padding: 0;
+    }
+    .mainnavbar .navbar-brand {
+        padding: 0.375rem 0.5rem;
+    }
+    .mainnavbar .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 0.1rem;
+    }
+    .mainnavbar .navbar-toggler{
+        margin-right: 0.5rem;
+    }
+}
