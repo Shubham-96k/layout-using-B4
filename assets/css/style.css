@@ -3,39 +3,98 @@
     --nav-bg-color: #fff;
 }
 
-.mainnavbar .navbar-nav .active>.nav-link, 
-.mainnavbar .navbar-nav .nav-link.active, 
-.mainnavbar .navbar-nav .nav-link.show, 
-.mainnavbar .navbar-nav .show>.nav-link {
-    color: var(--dark-color);
-    background-color: var(--nav-bg-color);
+/* ########### css for navigation ############# */
+
+.navbar.mainnavbar{
+    font-weight: bold;
+    padding: 0;
 }
 .mainnavbar .navbar-brand {
     height: 3.125rem;
-    padding: 0.375rem 0;
-}
-.navbar.mainnavbar{
-    padding: 0 1rem;
-    font-weight: bold;
-}
-.mainnavbar .navbar-nav .nav-link {
-    height: 3.125rem;
-    line-height: 3.125rem;
-    padding: 0 0.5rem;
-}
-.mainnavbar .navbar-nav .nav-link:focus, 
-.mainnavbar .navbar-nav .nav-link:hover {
-    color: var(--dark-color);
-    background-color: var(--nav-bg-color);
-}
-.mainnavbar .navbar-nav .nav-item{
-    margin-left: 0.3rem;
+    margin: 0 0.5rem
 }
 .mainnavbar .navbar-toggler {
     border-color: var(--nav-bg-color);
-}
-.mainnavbar .navbar-toggler i{
     color: var(--nav-bg-color);
+    margin: 0 0.5rem;
+}
+.mainnavbar .navbar-nav .nav-link{
+    height: 3.125rem;
+    line-height: 3.125rem;
+    padding: 0 0.5rem;
+    position: relative;
+    color: var(--nav-bg-color);
+    margin-bottom: 0.1rem;
+}
+.mainnavbar .navbar-nav .nav-link::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    display: inline-block;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    transition: all 0.3s linear;
+    z-index: -1;
+}
+
+.mainnavbar .navbar-nav .nav-link:focus,
+.mainnavbar .navbar-nav .active>.nav-link, 
+.mainnavbar .navbar-nav .nav-link.active, 
+.mainnavbar .navbar-nav .nav-link.show, 
+.mainnavbar .navbar-nav .show>.nav-link{
+    color: var(--dark-color);
+    background-color: var(--nav-bg-color);
+}
+.mainnavbar .navbar-nav .nav-link:hover{
+    color: var(--dark-color);
 }
 
 
+
+/* ########## css for homepage ############### */
+
+.home-carousel .carousel-item img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.home-carousel .carousel-caption{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+/* ############### css for homeparallax ############ */
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homeparallax{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)), 
+    url(https://images.unsplash.com/photo-1515963665762-77ef90e624fa?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* ########### css for video-section and gallary ########## */
+
+.video-section{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                                        url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-piccinng-3075993.jpg&fm=jpg);
+}
+.photogallery img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ########## css for footer ############## */
+
+.footer{
+    background-color: var(--dark-color);
+}

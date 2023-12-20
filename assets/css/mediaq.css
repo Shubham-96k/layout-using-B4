@@ -1,15 +1,49 @@
-@media all and (max-width: 990px){
-    .mainnavbar.navbar{
-        padding: 0;
-    }
-    .mainnavbar .navbar-brand {
-        padding: 0.375rem 0.5rem;
-    }
+
+@media all and (min-width: 992px){
     .mainnavbar .navbar-nav .nav-item {
-        margin-left: 0;
-        margin-bottom: 0.1rem;
+        margin-bottom: 0;
+        margin-left: 0.3rem;
     }
-    .mainnavbar .navbar-toggler{
-        margin-right: 0.5rem;
+    .mainnavbar.navbar{
+        padding: 0 0.3rem;
+    }
+    .mainnavbar .navbar-brand{
+        margin: 0 0.2rem;
+    }
+    .mainnavbar .navbar-nav .nav-link{
+        z-index: 1;
+        padding: 0 2.5rem;
+        margin-bottom: 0;
+    }
+    .mainnavbar .navbar-nav .nav-link:hover::after{
+        height: 100%;
+        bottom: 0;
+    }
+    .home-carousel .carousel-item img{
+        height: 550px;
+    }
+    .home-carousel .carousel-caption{
+        top: 50%;
+    }
+}
+@media all and (min-width: 768px){
+    .carousel-item::after{
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media all and (max-width: 576px){
+    .formcenter .form-group{
+        width: 100%;
+        
+    }
+    .formcenter button{
+        margin: 10px auto;
     }
 }
