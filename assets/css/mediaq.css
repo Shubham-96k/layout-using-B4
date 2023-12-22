@@ -36,12 +36,12 @@
         top: 0;
         left: 0;
     }
+    
 }
 
 @media all and (max-width: 576px){
     .formcenter .form-group{
-        width: 100%;
-        
+        width: 100%;   
     }
     .formcenter button{
         margin: 10px auto;
