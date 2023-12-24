@@ -126,3 +126,37 @@
 #testimonialsOwlCarousel .owl-nav {
     margin-top: 0;
 }
+
+/* ########### css for service page ############ */
+
+.servicesplan li{
+    display: flex;
+}
+.servicesplan li> *{
+    flex-basis: 50%;
+}
+.servicesplan li> i{
+    text-align: right;
+    padding-right: 10px;
+}
+.servicesplan li> span{
+    text-align: left;
+    align-self: center;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+.accordian .card-header {
+    background-color: #edf2f4;
+}
+
+.accordian .btn-link {
+    font-weight: 900;
+    color: #415a77;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.accordian .btn-link:hover{
+    text-decoration: none;
+}
