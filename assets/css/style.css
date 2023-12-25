@@ -111,21 +111,28 @@
 /* ########## css for aboutus page ############ */
 
 .infocard .card,
+.modelinfo img,
 .photogallery img{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
+.modelinfo img{
+    height: 350px;
+    width: 350px;
+    border: 2px solid var(--nav-bg-color);
+}
 #testimonialsOwlCarousel img{
     width: 80%;
     display: block;
     margin: 0 auto 1.5rem;
     border: 2px solid var(--nav-bg-color);
+    cursor: pointer;
 }
 #testimonialsOwlCarousel .owl-nav {
     margin-top: 0;
 }
+
 
 /* ########### css for service page ############ */
 
