@@ -46,6 +46,12 @@
         top: 0;
         left: 0;
     }
+    .contact-form .form-group{
+        flex: 0 0 100%;
+    }
+    .contact-form .form-control{
+        flex-basis: 45%;
+    }
     
 }
 
