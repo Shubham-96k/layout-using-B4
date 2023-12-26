@@ -117,14 +117,16 @@
                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#testimonialsOwlCarousel img{
+#testimonialsOwlCarousel img,
+#testimonialsOwlCarousel2 img{
     width: 80%;
     display: block;
     margin: 0 auto 1.5rem;
     border: 2px solid var(--nav-bg-color);
     cursor: pointer;
 }
-#testimonialsOwlCarousel .owl-nav {
+#testimonialsOwlCarousel .owl-nav,
+#testimonialsOwlCarousel2 .owl-nav {
     margin-top: 0;
 }
 
@@ -167,4 +169,28 @@
 
 .blogPost .card{
     height: auto;
+}
+
+/* ############## css for contact us page ########### */
+
+.contact-info h3{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.contact-info a {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.contact-form .form-group{
+    flex: 0 0 100%;
+}
+.contact-form .form-control{
+    flex-basis: 45%;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-style: italic;
+}
+.contact-form .form-group textarea{
+    flex-basis: 100%;
 }
